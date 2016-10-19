@@ -1,0 +1,15 @@
+@font-face {
+	font-family: 'vaud';
+	src: url('../fonts/vaud-regular.woff') format('woff'),
+		 url('../fonts/vaud-regular.woff2') format('woff2'),
+		 url('../fonts/vaud-regular.otf') format('otf');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'vaud';
+	src: url('../fonts/vaud-bold.woff') format('woff'),
+		 url('../fonts/vaud-bold.woff2') format('woff2'),
+		 url('../fonts/vaud-bold.otf') format('otf');
+	font-weight: bold;
+}
