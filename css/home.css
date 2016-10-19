@@ -10,14 +10,14 @@
  * gris: 		rgba(87, 87, 87, 1);
  *
  * Degradado:	linear-gradient(54deg, #DA2D26 16%, #F2914B 100%);
- * 
+ *
  * Colores secundarios
  * -------------------
  * Azul:		rgba(38, 178, 218, 1);
  * Verde:		rgba(151, 211, 93, 1);
  * Rojo:		rgba(248, 86, 78, 1);
  *
- **/ 
+ **/
 
 /* Reset 'Eric Meyer' */
 
@@ -110,6 +110,18 @@ body {
 	color: rgba(87, 87, 87, 1);
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+  line-height: inherit;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+
 .ancho-max {
 	margin: 0 auto;
 	max-width: 800px; max-width: 80rem;
@@ -167,7 +179,7 @@ body {
 }
 
 .header-logos {
-	float: right;	
+	float: right;
 }
 
 .header-logos ul {
@@ -222,7 +234,7 @@ body {
 }
 
 .nav-principal ul {
-	font-size: 17px; font-size: 1.7rem; 
+	font-size: 17px; font-size: 1.7rem;
 	font-weight: bold;
 }
 
@@ -332,7 +344,7 @@ h2 + p {
 
 
 .color_container {
-	margin-bottom: 50px; margin-bottom: 5rem; 
+	margin-bottom: 50px; margin-bottom: 5rem;
 	width: 100%;
 	background: white;
 }
@@ -525,7 +537,868 @@ h2 + p {
 .p_container p.description {
 	text-align: left;
 	padding-bottom: 10px;
-	font-weight: bold; 
+	font-weight: bold;
 }
 
+/*
+
+			Atoms
+
+								*/
+
+/* Taules ------------------------------------------------------*/
+
+table {
+  border: solid 1px #f2914b;
+}
+
+table tr:nth-of-type(even) {
+  background: rgba(242, 145, 75, 0.14);
+}
+
+thead {
+  color: white;
+	font-family: 'vaud';
+	font-weight: bold;
+  background: #F2914B;
+}
+
+th,
+td {
+  padding-left: 1rem;
+  line-height: 4rem;
+  font-size: 1.6rem;
+  text-align: left;
+  border-right: 1px solid #F2914B;
+}
+
+th {
+	font-family: 'vaud';
+	font-weight: bold;
+}
+
+td {
+	font-family: 'vaud';
+	font-weight: normal;
+}
+
+/* Formularis --------------------------------------------------*/
+
+input {
+	display: block;
+	min-width: 50%;
+	font-size: 1.8rem;
+  padding: 1rem;
+  outline: none;
+  margin-bottom: 1.5rem;
+}
+
+::-webkit-input-placeholder {
+	color: #929292;
+}
+
+:-ms-input-placeholder {
+	color: #929292;
+}
+
+::-moz-placeholder {
+	color: #929292;
+}
+
+::placeholder {
+	color: #929292;
+}
+
+input[type=text]:focus, input[type=phone]:focus {
+  box-shadow: 0 0 5px #F2914B;
+  border: 2px solid #F2914B;
+  background-image: none;
+}
+
+input:optional {
+	border: 2px solid #F2914B;
+}
+
+input:invalid {
+	background-color: #FCFCFC;
+	border: 1px solid #DA2D26;
+  box-shadow: 0 0 5px #DA2D26;
+  background-image: url(../img/error_icon_red.svg);
+  background-position: 98% 10px;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+}
+
+input:valid {
+	border: 1px solid #97D35D;
+  box-shadow: 0 0 5px #97D35D;
+  background-image: url(../img/success_icon_green.svg);
+  background-position: 98% 10px;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+}
+
+input:disabled {
+  background-color: #C6C6C6;
+  border: 2px solid #9B9B9B;
+  color: #575756;
+}
+
+input[type=checkbox]:checked + label {
+	color: #97D35D;
+	font-family: 'vaud';
+	font-weight: bold;
+}
+
+textarea {
+  border: 1px solid #F2914B;
+  outline: none;
+  padding: 2rem;
+}
+
+textarea:focus {
+  border: 2px solid #F2914B;
+  box-shadow: 0 0 5px #F2914B;
+}
+
+label {
+	font-family: 'vaud';
+	font-weight: normal;
+  font-size: 1.6rem;
+  padding-bottom: 1.2rem;
+  color: #575756;
+}
+
+select {
+  display: inline-block;
+}
+
+/* Breadcrumbs -------------------------------------------------*/
+
+ul.breadcrumbs {
+	list-style: none;
+  font-size: 1.4rem;
+}
+
+ul.breadcrumbs li {
+  display: inline-block;
+}
+
+ul.breadcrumbs > * a:hover {
+  color: #DA2D26;
+}
+
+ul.breadcrumbs > *:first-child:before {
+  content: " ";
+}
+
+ul.breadcrumbs > *:before {
+  content: "/";
+  color: black;
+}
+
+ul.breadcrumbs > *:last-child {
+  color: #F2914B;
+	font-family: 'vaud';
+	font-weight: bold;
+}
+
+/* Paginació ---------------------------------------------------*/
+
+ul.paginacio {
+  font-size: 1.8rem;
+  list-style-position: outside;
+	list-style: none;
+}
+
+ul.paginacio li {
+  display: inline-block;
+}
+
+ul.paginacio li a {
+	font-family: 'vaud';
+	font-weight: bold;
+  padding: 0rem 0.7rem;
+  text-align: center;
+  line-height: 3.1rem;
+}
+
+ul.paginacio li.actual a {
+  border-radius: 2000px;
+  background-color: #DA2D26;
+  color: white;
+}
+
+ul.paginacio li a:hover {
+  border-radius: 2000px;
+  background-color: #F2914B;
+  color: white;
+}
+
+/* Llista desordenada -----------------------------------------*/
+
+.unlist {
+	font-size: 1.6rem;
+	list-style: none;
+  padding:0;
+  margin:0;
+}
+
+.unlist li {
+	padding-left: 1em;
+  text-indent: -.7em;
+}
+
+.unlist li::before {
+	content: '• ';
+	font-size: 2.3rem;
+	color: #DA2D26;
+}
+
+
+/* Llista ordenada --------------------------------------------*/
+
+ol {
+	counter-reset: item;
+	font-size: 1.6rem;
+}
+
+ol li {
+	display: block;
+	padding-bottom: 1rem;
+	padding-left: 0.5rem;
+}
+
+ol li:before {
+	content: counter(item) ". ";
+	counter-increment: item;
+	color: #DA2D26;
+	font-family: 'vaud';
+	font-weight: bold;
+}
+
+/* Call to action ----------------------------------------------*/
+
+.calltoaction {
+  background-image: linear-gradient(36deg, #DA2D26 16%, #F2914B 100%);
+  color: white;
+  padding: 2rem 7rem;
+  font-size: 2.4rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.calltoaction:hover {
+  color: white;
+  box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 9px 25px 0 rgba(0,0,0,0.19);
+}
+
+/* Caixes de notificació ----------------------------------------*/
+
+.errorbox,
+.warningbox,
+.successbox,
+.infobox {
+  font-family: 'vaud';
+	font-weight: bold;
+  color: white;
+  font-size: 1.4rem;
+  text-align: left;
+  display: inline-block;
+  padding: 1.6rem 6rem 1.6rem 1.8rem;
+  position: relative;
+}
+
+.erroricon,
+.warningicon,
+.successicon,
+.infoicon {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  position: absolute;
+  top: 1.3rem;
+  right: 1.6rem;
+}
+
+.erroricon {
+  content: url(../img/error_icon.svg);
+}
+
+.warningicon {
+  content: url(../img/warning_icon.svg);
+}
+
+.successicon {
+  content: url(../img/success_icon.svg);
+}
+
+.infoicon {
+  content: url(../img/info_icon.svg);
+}
+
+.errorbox {
+  background-color: #DA2D26;
+}
+
+.warningbox {
+  background-color: #F2914B;
+}
+
+.successbox {
+  background-color: #97D35D;
+}
+
+.infobox {
+  background-color: #26B2DA;
+}
+
+/* Panells d'informació -----------------------------------------*/
+
+.infopanel,
+.linkpanel,
+.photopanel {
+  background: #FCFCFC;
+  box-shadow: 0px 2px 4px 0px #C6C6C6;
+  width: 295px;
+  height: 215px;
+  position: relative;
+  display: inline-block;
+}
+
+.infopanel a {
+  padding: 2rem 2rem 0 2rem;
+  display: block;
+	font-family: 'vaud';
+	font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.1rem;
+  color: #DA2D26;
+}
+
+.infopanel p {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 2rem 2rem 2rem;
+  color: #575756;
+}
+
+.linkpanel {
+  background-image: linear-gradient(36deg, #DA2D26 16%, #F2914B 100%);
+  float: left;
+}
+
+.linkpanel a {
+  font-size: 3.6rem;
+  line-height: 3.8rem;
+	font-family: 'vaud';
+	font-weight: bold;
+  color: white;
+  padding: 2rem 2rem 0 2rem;
+  display: block;
+}
+
+.photopanel {
+  background: url(../img/estudiar.jpg) center no-repeat;
+  background-size: cover;
+  float: left;
+}
+
+.photopanel .panelbutton {
+	font-family: 'vaud';
+	font-weight: bold;
+  font-size: 2.8rem;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: inherit;
+  padding: 1rem 2rem 4rem 2rem;
+  background-image: linear-gradient(36deg, #DA2D26 16%, #F2914B 100%);
+}
+
+/* Pestanyes ----------------------------------------------------*/
+
+.multitabs {
+  position: relative;
+  width: 606px;
+  z-index: 0;
+  padding-bottom: 15rem;
+}
+
+.multitabs:after {
+  content: '';
+  position: absolute;
+  background-color: #FCFCFC;
+  left: 0;
+  top: 45px;
+  width: 100%;
+  height: 120px;
+  font-size: 1.8em;
+  border: 0.1rem solid #F2914B;
+  padding: 40px 0;
+}
+
+.tabs button {
+  cursor: pointer;
+  width: 90px;
+  display: inline-block;
+  background-color: white;
+  color: #F2914B;
+  transition: .40s ease;
+  border: 0.1rem solid #F2914B;
+  padding: 10px;
+  text-align: left;
+  font-size: 1.8rem;
+	font-family: 'vaud';
+	font-weight: bold;
+}
+
+.tabs button:hover {
+  background-color: #DA2D26;
+  color: white;
+  border: 0.1rem solid #DA2D26;
+}
+
+.tabs:focus button, button:focus {
+  background-color: #F2914B;
+  outline: none;
+  color: white;
+}
+
+.tabs button:focus + p, .tabs:focus P {
+  display: block;
+  position: absolute;
+  background-color: #FCFCFC;
+  border: 0.1rem solid #F2914B;
+  height: 120px;
+  width: 100%;
+  left: 0;
+  z-index: 2;
+  outline: none;
+  top: 45px;
+  padding: 1.5rem;
+}
+
+.tabs p {
+	font-family: 'vaud';
+	font-weight: normal;
+  display: none;
+  font-size: 1.6rem;
+  overflow: scroll;
+}
+
+.tabs {
+  display: inline-block;
+}
+
+.tabs:focus {
+  outline: none;
+}
+
+/* Botons ----------------------------------------------------*/
+
+.redbutton, .orangebutton, .bluebutton, .greenbutton {
+  color: white;
+  font-size: 1.6rem;
+  padding: 1.5rem 4rem;
+  outline: none;
+  border: none;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.redbutton {
+  background-color: #DA2D26;
+}
+
+.orangebutton {
+  background-color: #F2914B;
+}
+
+.bluebutton {
+  background-color: #26B2DA;
+}
+
+.greenbutton {
+  background-color: #97D35D;
+}
+
+.redbutton:hover, .orangebutton:hover, .bluebutton:hover, .greenbutton:hover {
+  color: white;
+  box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 9px 25px 0 rgba(0,0,0,0.19);
+}
+
+/* Calendari -------------------------------------------------*/
+
+.calendarsq, .calendarshape {
+  width: 123px;
+  height: 121px;
+  color: white;
+	font-family: 'vaud';
+	font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 3rem;
+}
+
+.calendarsq {
+  background-image: linear-gradient(54deg, #DA2D26 16%, #F2914B 100%);
+  box-shadow: 0px 2px 4px 0px #C6C6C6;
+  padding: 1rem;
+}
+
+.calendarsq p, .calendarshape p {
+  font-size: 2rem;
+}
+
+.calendarsq p:last-child, .calendarshape p:last-child {
+  margin-top: -5px;
+}
+
+.calendarsq em, .calendarshape em {
+  font-size: 6.4rem;
+  line-height: 3rem;
+  margin: 0;
+}
+
+.calendarshape {
+  background: url(../img/calendar_shape.svg) center no-repeat;
+  padding-top: 1rem;
+}
+
+/* Menú desplegable ------------------------------------------*/
+
+.dropmenu {
+  width: 800px;
+  height: 60px;
+  background-color: #FCFCFC;
+  box-shadow: 0px 2px 4px 0px #C6C6C6;
+  margin-bottom: 3rem;
+  color: #575756;
+	font-family: 'vaud';
+	font-weight: bold;
+  overflow: hidden;
+}
+
+.urvlogo {
+  width: 50px;
+  height: 50px;
+  background: url(../img/urv_logo.svg) center no-repeat;
+  margin-left: 15px;
+  margin-right: 30px;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.menulist {
+  display: inline-block;
+  vertical-align: top;
+  height: 60px;
+}
+
+.menulist li {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 20px 20px 0 20px;
+  height: 60px;
+}
+
+.menulist li:hover {
+  color: #DA2D26;
+  box-shadow: inset 0px 6px 12px 0px rgba(0,0,0,0.2);
+}
+
+.desplegable {
+  padding: 20px 20px 0 20px;
+  height: 60px;
+}
+
+.desplegable:hover {
+  color: #DA2D26;
+  box-shadow: inset 0px 6px 12px 0px rgba(0,0,0,0.2);
+}
+
+.contingut {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.desplegable:hover .contingut {
+    width: 300px;
+    height: 220px;
+    display: block;
+    margin-top: 20px;
+    margin-left: -20px;
+}
+
+.desplegable:hover .contingut a {
+    color: #575756;
+    display: block;
+    padding: 20px 0 0 20px;
+}
+
+.desplegable:hover .contingut a:hover {
+    color: #DA2D26;
+}
+
+/* Footer ----------------------------------------------------*/
+
+footer {
+  width: 100%;
+  height: 45rem;
+  background-color: #575756;
+  color: white;
+}
+
+.footer1, .footer2, .footer3, .footer4 {
+  display: inline-block;
+  padding: 4rem;
+  vertical-align: top;
+}
+
+.footer4 {
+  float: right;
+}
+
+.logourvwhite {
+  content: url(../img/urv-white.svg);
+  width: 159px;
+  height: 67px;
+  margin-bottom: 40px;
+}
+
+.contactinfo {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-bottom: 80px;
+}
+
+.legal {
+  font-size: 1.4rem;
+}
+
+.legal a {
+  display: block;
+  padding-bottom: 0.7rem;
+}
+
+.legal a:first-child {
+  padding-top: 0.7rem;
+}
+
+.unlistwhite {
+	font-size: 1.6rem;
+	list-style: none;
+  padding:0;
+  margin:0;
+}
+
+.unlistwhite li {
+	padding-bottom: 0.7rem;
+	padding-left: 1em;
+  text-indent: -.7em;
+}
+
+.unlistwhite li::before {
+	content: '• ';
+	font-size: 2.3rem;
+	color: white;
+}
+
+.instagramwhite, .facebookwhite, .youtubewhite, .linkedinwhite, .twitterwhite {
+  width: 53px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-left: 2rem;
+}
+
+.instagramwhite {
+  content: url(../img/instagram_logo.svg);
+}
+
+.facebookwhite {
+  content: url(../img/facebook_logo.svg);
+}
+
+.youtubewhite {
+  content: url(../img/youtube_logo.svg);
+}
+
+.linkedinwhite {
+  content: url(../img/linkedin_logo.svg);
+}
+
+.twitterwhite {
+  content: url(../img/twitter_logo.svg);
+}
+
+
+/* Acordion ----------------------------------------------------*/
+
+.panel-group a {
+  text-decoration: none;
+}
+div#heading1 {
+  background: #fcfcfc;
+  color: #575756;
+  transition: .4s ease-in-out;
+  border-radius: 0;
+}
+div#heading1:hover {
+  background: #DA2D26;
+  border-radius: 0;
+  text-decoration: none;
+  color: white;
+}
+div#heading1:active {
+  background: black;
+}
+div#heading1 h3 {
+  padding: 0;
+  color: inherit;
+  margin: 0;
+  font-family: inherit;
+}
+div#headingTwo {
+  background: #fcfcfc;
+}
+.panel-group .panel {
+  margin-bottom: 0;
+  border-radius: 0;
+  border: 1px solid #f2914b;
+}
+.cont_acordion_1,
+.cont_acordion_2,
+.cont_acordion_3 {
+  padding: 5px;
+}
+.cont_acordion_1,
+.cont_acordion_2 {
+  border-bottom: 1px solid #f2914b;
+}
+.panel-body {
+  padding: 15px;
+  border: 1px solid #f2914b;
+  border-top: none;
+}
+
+<<<<<<< HEAD
 /* RESPONSIVE */
+=======
+/*slider*/
+    
+    .carousel-inner {
+        height: 300px;
+    }
+    .carousel-indicators .active {
+        background-color: #db3127 !important;
+        border: none;
+    }
+    .carousel-control.left {
+        background-image: none !important;
+    }
+    .carousel-control.right {
+        background-image: none !important;
+    }
+    .slider_text h2 {
+        font-family: 'vaud', 'Source Sans Pro', sans-serif;
+        font-size: 3.6rem;
+        color: white;
+        display: inline-block;
+        position: absolute;
+        background-color: transparent;
+        width: 35%;
+        top: 0;
+        left: 5%;
+        padding-top: 100px;
+        font-weight: normal;
+    }
+    .slider_text h2 span {
+        font-weight: bold;
+    }
+/*fin slider*/
+    
+
+
+/* RESPONSIVE */
+
+/*slider*/
+
+    @media screen and (min-width: 701px) and (max-width: 800px){
+
+        .carousel-inner {
+        height: 200px;
+        }
+
+        .slider_text h2 {
+            top: 35%;
+            font-size: 20px; font-size: 2.0rem;
+            padding-top: 0px;
+        }
+        
+        .carousel-indicators {
+            bottom: 35px;
+        }
+
+    }
+
+    @media screen and (min-width:801px) and (max-width:900px) {
+
+        .carousel-inner {
+        height: 200px;
+        }
+        
+        .slider_text h2 {
+            top: 40%;
+            font-size: 20px; font-size: 2.0rem;
+            padding-top: 0px;
+        }
+
+        .carousel-indicators {
+            bottom: 10px;
+        }
+    }
+
+
+    @media screen and (min-width:901px) and (max-width: 1100px){
+
+        .carousel-inner {
+        height: 200px;
+        }
+
+        .slider_text h2{
+            top: 30%;
+            font-size: 25px; font-size: 2.5rem;
+            padding-top: 0px;
+        }
+
+        .carousel-indicators {
+            bottom: 10px;
+        }
+
+    }
+
+    @media screen and (min-width: 1101px) and (max-width: 1250px){
+        .slider_text h2{
+            top: 25%;
+            padding-top:0px;
+        }
+
+        .carousel-indicators{
+            bottom:50px;
+        }
+
+    }
+
+/*fin slider*/
+>>>>>>> origin/master
