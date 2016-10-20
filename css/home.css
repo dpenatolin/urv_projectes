@@ -489,7 +489,7 @@ h2 + p {
 
 .headings_container {
 	background: white;
-	margin-bottom: 50px;
+	margin-bottom: 50px; margin-bottom: 5rem;
 }
 
 .h-content {
@@ -504,13 +504,13 @@ h2 + p {
 .h-content h3,
 .h-content h4,
 .h-content h5 {
-	margin: 30px 0 5px 0;
+	margin: 30px 0 5px 0; margin: 3rem 0 .5px 0;
 	padding: 0 30px;
 }
 
 .h-content p.description {
 	text-align: left;
-	padding-left: 30px;
+	padding-left: 30px; padding-left: 3rem;
 	font-weight: bold;
 }
 
@@ -518,119 +518,57 @@ h2 + p {
 
 .p_container {
 	background: white;
-	padding: 30px;
-	margin-bottom: 50px;
+	padding: 30px; padding: 3rem;
+	margin-bottom: 50px; margin-bottom: 5rem;
 }
 
 .p_container p.description {
 	text-align: left;
-	padding-bottom: 10px;
+	padding-bottom: 10px; padding-bottom: 1rem;
 	font-weight: bold; 
 }
 
-/*slider*/
-    
-    .carousel-inner {
-        height: 300px;
-    }
-    .carousel-indicators .active {
-        background-color: #db3127 !important;
-        border: none;
-    }
-    .carousel-control.left {
-        background-image: none !important;
-    }
-    .carousel-control.right {
-        background-image: none !important;
-    }
-    .slider_text h2 {
-        font-family: 'vaud', 'Source Sans Pro', sans-serif;
-        font-size: 3.6rem;
-        color: white;
-        display: inline-block;
-        position: absolute;
-        background-color: transparent;
-        width: 35%;
-        top: 0;
-        left: 5%;
-        padding-top: 100px;
-        font-weight: normal;
-    }
-    .slider_text h2 span {
-        font-weight: bold;
-    }
-/*fin slider*/
-    
+/* Responsive */
 
+@media screen and (max-width: 1180px) {
+	html { font-size: 60%; }
+}
 
-/* RESPONSIVE */
+@media screen and (max-width: 1130px) {
+	html { font-size: 55%; }
+	
+	#colors .dib25 { width: 33.333%; }
+	
+	.color_container:nth-child(1),
+	.color_container:nth-child(2),
+	.color_container:nth-child(3) {
+		margin-bottom: 10px;
+	}
+	
+	/* AQUÍ DANIEL! */
+	/*.color_container:last-child {
+		padding-left: 0;
+	}*/
+}
 
-/*slider*/
+@media screen and (max-width: 960px) {
+	.type-abcd--regular p,
+	.type-abcd--bold p {
+		font-size: 22px; font-size: 2.2rem;
+	}
+}
 
-    @media screen and (min-width: 701px) and (max-width: 800px){
+@media screen and (max-width: 840px) {
+	.container {
+		padding: 0 6%;
+	}
+}
 
-        .carousel-inner {
-        height: 200px;
-        }
-
-        .slider_text h2 {
-            top: 35%;
-            font-size: 20px; font-size: 2.0rem;
-            padding-top: 0px;
-        }
-        
-        .carousel-indicators {
-            bottom: 35px;
-        }
-
-    }
-
-    @media screen and (min-width:801px) and (max-width:900px) {
-
-        .carousel-inner {
-        height: 200px;
-        }
-        
-        .slider_text h2 {
-            top: 40%;
-            font-size: 20px; font-size: 2.0rem;
-            padding-top: 0px;
-        }
-
-        .carousel-indicators {
-            bottom: 10px;
-        }
-    }
-
-
-    @media screen and (min-width:901px) and (max-width: 1100px){
-
-        .carousel-inner {
-        height: 200px;
-        }
-
-        .slider_text h2{
-            top: 30%;
-            font-size: 25px; font-size: 2.5rem;
-            padding-top: 0px;
-        }
-
-        .carousel-indicators {
-            bottom: 10px;
-        }
-
-    }
-
-    @media screen and (min-width: 1101px) and (max-width: 1250px){
-        .slider_text h2{
-            top: 25%;
-            padding-top:0px;
-        }
-
-        .carousel-indicators{
-            bottom:50px;
-        }
-
-    }
-
-/*fin slider*/
+@media screen and (max-width: 800px) {
+	.nav-principal {
+		display: none;
+	}
+	.dib80.container {
+		width: 100%;
+	}
+}
