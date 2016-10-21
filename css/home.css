@@ -750,11 +750,50 @@ i.material-icons {
 }
 
 @media screen and (max-width: 610px) {
-    
+    #colors .dib25,
+    #colors .dib33 {
+        width: 50%;
+    }
+    .gris2 {
+        padding-right: 5px;
+        padding-left: 0;
+    }
+    .gris3 {
+        padding-left: 5px;
+        padding-right: 0;
+    }
+    #tipografia .dib25 {
+        width: 100%;
+    }
+    #tipografia .dib75 {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 415px) {
     .mdl-layout__drawer.is-visible {
         width: 70%;
     }
+}
+
+@media screen and (max-width: 375px) {
+    #identitat .dib50.pad5_right,
+    #identitat .dib50.pad5_left {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #colors .dib25,
+    #colors .dib33 {
+        width: 100%;
+    }
+    .ancho35 p,
+    .ancho30 p,
+    .ancho5 p {
+        text-align: center;
+    }
+
+
 }
