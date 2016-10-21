@@ -1,106 +1,96 @@
 /*slider*/
-    
-    .carousel-inner {
-        height: 300px;
-    }
-    .carousel-indicators .active {
-        background-color: #db3127 !important;
-        border: none;
-    }
-    .carousel-control.left {
-        background-image: none !important;
-    }
-    .carousel-control.right {
-        background-image: none !important;
-    }
-    .slider_text h2 {
-        font-family: 'vaud', 'Source Sans Pro', sans-serif;
-        font-size: 3.6rem;
-        color: white;
-        display: inline-block;
-        position: absolute;
-        background-color: transparent;
-        width: 35%;
-        top: 0;
-        left: 5%;
-        padding-top: 100px;
-        font-weight: normal;
-    }
-    .slider_text h2 span {
-        font-weight: bold;
-    }
+
+.carousel-inner {
+    height: 300px;
+}
+.carousel-indicators {
+    z-index: 4;
+}
+.carousel-indicators .active {
+    background-color: #db3127 !important;
+    border: none;
+}
+.carousel-control.left {
+    background-image: none !important;
+}
+.carousel-control.right {
+    background-image: none !important;
+}
+.slider_text h2 {
+    font-family: 'vaud', 'Source Sans Pro', sans-serif;
+    font-size: 3.6rem;
+    color: white;
+    display: inline-block;
+    position: absolute;
+    background-color: transparent;
+    width: 35%;
+    top: 0;
+    left: 5%;
+    padding-top: 100px;
+    font-weight: normal;
+}
+.slider_text h2 span {
+    font-weight: bold;
+}
+
 /*fin slider*/
-    
 
 
 /* RESPONSIVE */
 
+
 /*slider*/
 
-    @media screen and (min-width: 701px) and (max-width: 800px){
-
-        .carousel-inner {
+@media screen and (min-width: 701px) and (max-width: 800px) {
+    .carousel-inner {
         height: 200px;
-        }
-
-        .slider_text h2 {
-            top: 35%;
-            font-size: 20px; font-size: 2.0rem;
-            padding-top: 0px;
-        }
-        
-        .carousel-indicators {
-            bottom: 35px;
-        }
-
     }
-
-    @media screen and (min-width:801px) and (max-width:900px) {
-
-        .carousel-inner {
+    .slider_text h2 {
+        top: 35%;
+        font-size: 20px;
+        font-size: 2.0rem;
+        padding-top: 0px;
+    }
+    .carousel-indicators {
+        bottom: 35px;
+    }
+}
+@media screen and (min-width:801px) and (max-width:900px) {
+    .carousel-inner {
         height: 200px;
-        }
-        
-        .slider_text h2 {
-            top: 40%;
-            font-size: 20px; font-size: 2.0rem;
-            padding-top: 0px;
-        }
-
-        .carousel-indicators {
-            bottom: 10px;
-        }
     }
-
-
-    @media screen and (min-width:901px) and (max-width: 1100px){
-
-        .carousel-inner {
+    .slider_text h2 {
+        top: 40%;
+        font-size: 20px;
+        font-size: 2.0rem;
+        padding-top: 0px;
+    }
+    .carousel-indicators {
+        bottom: 10px;
+    }
+}
+@media screen and (min-width:901px) and (max-width: 1100px) {
+    .carousel-inner {
         height: 200px;
-        }
-
-        .slider_text h2{
-            top: 30%;
-            font-size: 25px; font-size: 2.5rem;
-            padding-top: 0px;
-        }
-
-        .carousel-indicators {
-            bottom: 10px;
-        }
-
     }
-
-    @media screen and (min-width: 1101px) and (max-width: 1250px){
-        .slider_text h2{
-            top: 25%;
-            padding-top:0px;
-        }
-
-        .carousel-indicators{
-            bottom:50px;
-        }
-
+    .slider_text h2 {
+        top: 30%;
+        font-size: 25px;
+        font-size: 2.5rem;
+        padding-top: 0px;
     }
+    .carousel-indicators {
+        bottom: 10px;
+    }
+}
+@media screen and (min-width: 1101px) and (max-width: 1250px) {
+    .slider_text h2 {
+        top: 25%;
+        padding-top: 0px;
+    }
+    .carousel-indicators {
+        bottom: 50px;
+    }
+}
 
 /*fin slider*/
