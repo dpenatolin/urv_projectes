@@ -814,7 +814,24 @@ footer a:hover {
 }
 
 @media screen and (max-width: 610px) {
+  input {
+    width: 100%;
+  }
 
+  .multitabs {
+    width: 100%;
+  }
+
+  .urvlogo {
+    width: 30px;
+    height: 30px;
+    margin: 14px 0px 0px 10px;
+  }
+
+  .menulist li {
+    padding: 24px 6px 0 6px;
+    vertical-align: middle;
+  }
 }
 
 @media screen and (max-width: 415px) {
@@ -824,6 +841,17 @@ footer a:hover {
 
   .multitabs {
     width: 100%;
+  }
+
+  .urvlogo {
+    width: 30px;
+    height: 30px;
+    margin: 14px 0px 0px 10px;
+  }
+
+  .menulist li {
+    padding: 24px 6px 0 6px;
+    vertical-align: middle;
   }
 }
 
@@ -845,11 +873,12 @@ footer a:hover {
   .urvlogo {
     width: 30px;
     height: 30px;
-    margin: 10px 0px 0px 10px;
+    margin: 14px 0px 0px 10px;
   }
 
   .menulist li {
-    padding: 6px 6px 0 6px;
+    padding: 24px 6px 0 6px;
+    vertical-align: middle;
   }
 
   .menulist li:last-child {
