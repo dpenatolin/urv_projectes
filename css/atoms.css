@@ -3,6 +3,14 @@
 			Atoms
 
 								*/
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
 
 /* Taules ------------------------------------------------------*/
 
@@ -627,6 +635,15 @@ footer {
   width: 100%;
   height: 45rem;
   background-color: #575756;
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  text-decoration: none;
   color: white;
 }
 
