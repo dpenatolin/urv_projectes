@@ -652,15 +652,20 @@ nav.mdl-navigation a:hover {
     background-color: rgba(255, 255, 255, .15);
 }
 i.material-icons {
-    color: #f2914b;
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+img.circulo {
+    position: fixed;
+    width: 43px;
+    left: 5px;
+    top: 7px;
+    z-index: 1;
 }
 .mdl-layout__obfuscator.is-visible {
     position: fixed;
-}
-.close {
-    color: white;
-    opacity: 1;
-    font-weight: normal;
 }
 .des_ico {
     padding-left: 4rem;

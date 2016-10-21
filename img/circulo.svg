@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="276px" height="255px" viewBox="0 0 276 255" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 1 Copy 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="32.2802953%" y1="79.3516187%" x2="94.6180021%" y2="-8.0703078%" id="linearGradient-1">
+            <stop stop-color="#DA2D26" offset="0%"></stop>
+            <stop stop-color="#F2914B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-334.000000, -187.000000)" fill="url(#linearGradient-1)">
+            <path d="M458.778517,187.858982 L458.778517,187.858982 C497.758991,184.372959 539.50331,191.14983 569.31671,214.58969 C602.576666,240.745051 615.270205,285.4354 606.290746,327.247319 C595.654023,370.41529 565.510559,409.727251 526.319888,428.79855 C487.130953,447.869849 437.831659,446.347472 400.376426,423.778268 C326.607282,380.920882 306.541172,265.707289 380.280783,214.771289 C402.348119,199.518663 430.514677,191.295788 458.778517,187.858982" id="Fill-1-Copy-5"></path>
+        </g>
+    </g>
+</svg>
