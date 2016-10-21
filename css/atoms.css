@@ -92,7 +92,7 @@ input:invalid {
   background-image: url(../img/error_icon_red.svg);
   background-position: 98% 10px;
   background-repeat: no-repeat;
-  background-size: 25px 25px;
+  background-size: 20px 20px;
 }
 
 input:valid {
@@ -101,7 +101,7 @@ input:valid {
   background-image: url(../img/success_icon_green.svg);
   background-position: 98% 10px;
   background-repeat: no-repeat;
-  background-size: 25px 25px;
+  background-size: 20px 20px;
 }
 
 input:disabled {
@@ -120,6 +120,9 @@ textarea {
   border: 1px solid #F2914B;
   outline: none;
   padding: 2rem;
+  font-family: 'vaud';
+	font-weight: normal;
+  font-size: 1.8rem;
 }
 
 textarea:focus {
@@ -140,12 +143,14 @@ select {
 	font-weight: normal;
 	font-size: 2rem;
 	color: #575756;
+  background-color: #FCFCFC;
 	border: 1px solid #F2914B;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	background: none;
 	box-shadow: none;
 	padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+  margin: 1.5rem 0;
 }
 
 /* Breadcrumbs -------------------------------------------------*/
@@ -402,9 +407,9 @@ ul.paginacio li a:hover {
 
 .multitabs {
   position: relative;
-  width: 606px;
+  width: 80%;
   z-index: 0;
-  padding-bottom: 15rem;
+  padding-bottom: 170px;
 }
 
 .multitabs:after {
@@ -414,7 +419,7 @@ ul.paginacio li a:hover {
   left: 0;
   top: 39px;
   width: 100%;
-  height: 120px;
+  height: 140px;
   font-size: 1.8em;
   border: 0.1rem solid #F2914B;
   padding: 40px 0;
@@ -430,7 +435,7 @@ ul.paginacio li a:hover {
   border: 0.1rem solid #F2914B;
   padding: 10px;
   text-align: left;
-  font-size: 1.8rem;
+  font-size: 18px;
 	font-family: 'vaud';
 	font-weight: bold;
 }
@@ -452,7 +457,7 @@ ul.paginacio li a:hover {
   position: absolute;
   background-color: #FCFCFC;
   border: 0.1rem solid #F2914B;
-  height: 120px;
+  height: 140px;
   width: 100%;
   left: 0;
   z-index: 2;
@@ -529,8 +534,8 @@ ul.paginacio li a:hover {
 }
 
 .calendarsq p, .calendarshape p {
-  font-size: 2rem;
-	line-height: 2rem;
+  font-size: 20px;
+	line-height: 20px;
 	color: white;
 	font-family: 'vaud';
 	font-weight: bold;
@@ -541,8 +546,8 @@ ul.paginacio li a:hover {
 }
 
 .calendarsq em, .calendarshape em {
-  font-size: 6.4rem;
-  line-height: 3rem;
+  font-size: 64px;
+  line-height: 30px;
   margin: 0;
 }
 
@@ -553,7 +558,7 @@ ul.paginacio li a:hover {
 /* Menú desplegable ------------------------------------------*/
 
 .dropmenu {
-  width: 800px;
+  width: 100%;
   height: 60px;
   background-color: #FCFCFC;
   box-shadow: 0px 2px 4px 0px #C6C6C6;

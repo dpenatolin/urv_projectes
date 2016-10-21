@@ -661,6 +661,11 @@ i.material-icons {
     opacity: 1;
     font-weight: normal;
 }
+.des_ico img {
+    width: 60px;
+    width: 6.0rem;
+    margin: 10px;
+}
 
 /* Fin desplegable */
 
@@ -672,7 +677,6 @@ i.material-icons {
         font-size: 62.5%;
     }
 }
-
 @media screen and (max-width: 1130px) {
     html {
         font-size: 55%;
@@ -690,10 +694,9 @@ i.material-icons {
     }
     .gris3 {
         padding-left: 0;
-        padding-right: 5px;
+        padding-right: 5px; padding-right: .5rem;
     }
 }
-
 @media screen and (max-width: 960px) {
     .type-abcd--regular p,
     .type-abcd--bold p {
@@ -706,13 +709,11 @@ i.material-icons {
         padding: 1.7rem 1.7rem 1.7rem 4rem;
     }
 }
-
 @media screen and (max-width: 840px) {
     .container {
         padding: 0 6%;
     }
 }
-
 @media screen and (max-width: 800px) {
     .nav-principal {
         display: none;
@@ -734,15 +735,17 @@ i.material-icons {
     .v100 {
         height: 0;
     }
-        .img_container .down_ico img,
+    .img_container .down_ico img,
     .type_container .down_ico img {
         opacity: .3;
         width: 30px;
+        width: 3rem;
     }
     .img_container:hover .down_ico img,
     .type_container:hover .down_ico img {
         opacity: .3;
         width: 30px;
+        width: 3rem;
     }
     .color-muestra span {
         opacity: .75;
@@ -756,10 +759,12 @@ i.material-icons {
     }
     .gris2 {
         padding-right: 5px;
+        padding-right: .5rem;
         padding-left: 0;
     }
     .gris3 {
         padding-left: 5px;
+        padding-left: .5rem;
         padding-right: 0;
     }
     #tipografia .dib25 {
@@ -794,6 +799,4 @@ i.material-icons {
     .ancho5 p {
         text-align: center;
     }
-
-
 }
