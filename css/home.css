@@ -661,6 +661,11 @@ i.material-icons {
     opacity: 1;
     font-weight: normal;
 }
+.des_ico img {
+    width: 60px;
+    width: 6.0rem;
+    margin: 10px;
+}
 
 /* Fin desplegable */
 
@@ -672,7 +677,6 @@ i.material-icons {
         font-size: 62.5%;
     }
 }
-
 @media screen and (max-width: 1130px) {
     html {
         font-size: 55%;
@@ -693,7 +697,6 @@ i.material-icons {
         padding-right: 5px;
     }
 }
-
 @media screen and (max-width: 960px) {
     .type-abcd--regular p,
     .type-abcd--bold p {
@@ -706,13 +709,11 @@ i.material-icons {
         padding: 1.7rem 1.7rem 1.7rem 4rem;
     }
 }
-
 @media screen and (max-width: 840px) {
     .container {
         padding: 0 6%;
     }
 }
-
 @media screen and (max-width: 800px) {
     .nav-principal {
         display: none;
@@ -734,7 +735,7 @@ i.material-icons {
     .v100 {
         height: 0;
     }
-        .img_container .down_ico img,
+    .img_container .down_ico img,
     .type_container .down_ico img {
         opacity: .3;
         width: 30px;
@@ -748,11 +749,7 @@ i.material-icons {
         opacity: .75;
     }
 }
-
-@media screen and (max-width: 610px) {
-    
-}
-
+@media screen and (max-width: 610px) {}
 @media screen and (max-width: 415px) {
     .mdl-layout__drawer.is-visible {
         width: 70%;
