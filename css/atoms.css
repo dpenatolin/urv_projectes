@@ -750,11 +750,51 @@ footer a:hover {
 
 @media screen and (max-width: 1180px) {}
 @media screen and (max-width: 1130px) {}
+  .footer3 {
+    padding-left: 10px;
+  }
 @media screen and (max-width: 960px) {}
 @media screen and (max-width: 840px) {}
 @media screen and (max-width: 800px) {}
+  .footer1 {
+    padding-right: 10px;
+  }
+  .footer2 {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .footer3 {
+    padding-left: 10px;
+  }
+
 @media screen and (max-width: 610px) {}
-@media screen and (max-width: 415px) {
+  footer {
+    height: 400px;
+    overflow: hidden;
+  }
+  .footer1 {
+    float: left;
+    display: inline-block;
+  }
+  .footer2 {
+    padding-bottom: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    float: left;;
+    display: block;
+  }
+  .footer3 {
+    padding-top: 35px;
+    padding-right: 20px;
+    padding-left: 20px;
+    float: left;
+    display: block;
+  }
+  .footer4 {
+    display: none;
+  }
+
+@media screen and (max-width: 486px) {
 
     input {
         width: 100%;
@@ -776,6 +816,18 @@ footer a:hover {
     vertical-align: middle;
   }
 
+  footer {
+    height: 800px;
+  }
+  .footer2 {
+    padding-bottom: 0;
+  }
+  .footer3 {
+    padding-top: 0;
+  }
+  .footer4 {
+    display: none;
+  }
 }
 @media screen and (max-width: 375px) {
 
@@ -801,5 +853,17 @@ footer a:hover {
     }
     .menulist li:last-child {
         display: none;
+    }
+    footer {
+      height: 800px;
+    }
+    .footer2 {
+      padding-bottom: 0;
+    }
+    .footer3 {
+      padding-top: 0;
+    }
+    .footer4 {
+      display: none;
     }
 }
