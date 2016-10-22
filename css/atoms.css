@@ -709,3 +709,47 @@ footer a:hover {
     border: 1px solid #f2914b;
     border-top: none;
 }
+
+/* ------ Responsive -------------*/
+
+
+/* Responsive */
+
+@media screen and (max-width: 1180px) {}
+@media screen and (max-width: 1130px) {}
+@media screen and (max-width: 960px) {}
+@media screen and (max-width: 840px) {}
+@media screen and (max-width: 800px) {}
+@media screen and (max-width: 610px) {}
+@media screen and (max-width: 415px) {
+    input {
+        width: 100%;
+    }
+    .multitabs {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 375px) {
+    .infopanel,
+    .linkpanel,
+    .photopanel {
+        width: 280px;
+    }
+    input {
+        width: 100%;
+    }
+    .multitabs {
+        width: 100%;
+    }
+    .urvlogo {
+        width: 30px;
+        height: 30px;
+        margin: 10px 0px 0px 10px;
+    }
+    .menulist li {
+        padding: 6px 6px 0 6px;
+    }
+    .menulist li:last-child {
+        display: none;
+    }
+}
