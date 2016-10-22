@@ -105,6 +105,8 @@ textarea {
     border: 1px solid #F2914B;
     outline: none;
     padding: 2rem;
+    width: 280px;
+    height: 230px;
     font-family: 'vaud';
     font-weight: normal;
     font-size: 1.8rem;
@@ -441,6 +443,7 @@ button:focus {
     border: none;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
+    margin: 0 1rem 1rem 0;
 }
 .redbutton {
     background-color: #DA2D26;
@@ -474,6 +477,7 @@ button:focus {
     text-align: center;
     display: inline-block;
     margin-bottom: 3rem;
+    margin-right: 1.5rem;
 }
 .calendarsq {
     background-image: linear-gradient(54deg, #DA2D26 16%, #F2914B 100%);
@@ -789,42 +793,13 @@ footer a:hover {
     .urvlogo {
         width: 30px;
         height: 30px;
-        margin: 10px 0px 0px 10px;
+        margin: 14px 0px 0px 10px;
     }
     .menulist li {
-        padding: 6px 6px 0 6px;
+      padding: 24px 6px 0 6px;
+      vertical-align: middle;
     }
     .menulist li:last-child {
         display: none;
     }
-
-  .infopanel,
-  .linkpanel,
-  .photopanel {
-    width: 280px;
-  }
-
-  input {
-    width: 100%;
-  }
-
-  .multitabs {
-    width: 100%;
-  }
-
-  .urvlogo {
-    width: 30px;
-    height: 30px;
-    margin: 14px 0px 0px 10px;
-  }
-
-  .menulist li {
-    padding: 24px 6px 0 6px;
-    vertical-align: middle;
-  }
-
-  .menulist li:last-child {
-    display: none;
-  }
-
 }
