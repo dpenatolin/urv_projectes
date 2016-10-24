@@ -747,7 +747,7 @@ a.mdl-navigation__link {
     color: white;
 }
 
-nav.mdl-navigation a {
+nav.mdl-navigation a.menu {
     display: block;
     text-decoration: none;
     color: white;
@@ -761,11 +761,6 @@ nav.mdl-navigation a {
     font-weight: bolder;
     border-bottom: 1px solid rgba(255, 255, 255, .15);
     margin-top: 10px;
-}
-
-nav.mdl-navigation a:hover {
-    padding: 1.7rem 1.7rem 1.7rem 6rem;
-    background-color: rgba(255, 255, 255, .15);
 }
 
 i.material-icons {
