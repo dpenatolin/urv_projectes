@@ -31,6 +31,7 @@ html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
@@ -38,6 +39,7 @@ html {
     -webkit-box-sizing: inherit;
     -moz-box-sizing: inherit;
 }
+
 
 /* FrameWork */
 
@@ -58,77 +60,99 @@ html {
     margin-right: -4px;
     vertical-align: top;
 }
+
 .dib10 {
     width: 10%;
 }
+
 .dib12 {
     width: 12.5%;
 }
+
 .dib17 {
     width: 16.666%;
 }
+
 .dib20 {
     width: 20%;
 }
+
 .dib25 {
     width: 25%;
 }
+
 .dib33 {
     width: 33.333%;
 }
+
 .dib50 {
     width: 50%;
 }
+
 .dib67 {
     width: 66.666%;
 }
+
 .dib75 {
     width: 75%;
 }
+
 .dib80 {
     width: 80%;
 }
+
 .dib83 {
     width: 83.333%;
 }
+
 .dib90 {
     width: 90%;
 }
+
 .dib100 {
     width: 100%;
 }
+
 .pad5_top {
     padding-top: 5px;
     padding-top: .5rem;
 }
+
 .pad5_right {
     padding-right: 5px;
     padding-right: .5rem;
 }
+
 .pad5_bottom {
     padding-bottom: 5px;
     padding-bottom: .5rem;
 }
+
 .pad5_left {
     padding-left: 5px;
     padding-left: .5rem;
 }
+
 .mar5_top {
     margin-top: 5px;
     margin-top: .5rem;
 }
+
 .mar5_right {
     margin-right: 5px;
     margin-right: .5rem;
 }
+
 .mar5_bottom {
     margin-bottom: 5px;
     margin-bottom: .5rem;
 }
+
 .mar5_left {
     margin-left: 5px;
     margin-left: .5rem;
 }
+
 
 /* Vaud font */
 
@@ -137,39 +161,47 @@ html {
     src: url('../fonts/vaud-regular.woff') format('woff'), url('../fonts/vaud-regular.woff2') format('woff2'), url('../fonts/vaud-regular.otf') format('otf');
     font-weight: normal;
 }
+
 @font-face {
     font-family: 'vaud';
     src: url('../fonts/vaud-bold.woff') format('woff'), url('../fonts/vaud-bold.woff2') format('woff2'), url('../fonts/vaud-bold.otf') format('otf');
     font-weight: bold;
 }
 
+
 /* Estilos */
 
 .h100 {
     height: 100%;
 }
+
 .v100 {
     height: 100vh;
 }
+
 ::selection {
     background-color: rgb(218, 45, 38);
     color: white;
 }
+
 html {
     height: 100%;
     font-size: 62.5%;
 }
+
 body {
     height: 100%;
     font-family: 'vaud', 'Source Sans Pro', sans-serif;
     background-color: rgba(245, 245, 245, 1);
     color: rgba(87, 87, 87, 1);
 }
+
 .ancho-max {
     margin: 0 auto;
     max-width: 800px;
     max-width: 80rem;
 }
+
 
 /* Headers */
 
@@ -181,6 +213,7 @@ h2 {
     font-weight: bold;
     color: rgba(218, 45, 38, 1);
 }
+
 h3 {
     padding: 20px 0;
     padding: 2rem 0;
@@ -189,6 +222,7 @@ h3 {
     font-weight: normal;
     color: rgba(87, 87, 87, 1);
 }
+
 h4 {
     padding: 20px 0;
     padding: 2rem 0;
@@ -197,6 +231,7 @@ h4 {
     font-weight: bold;
     color: rgba(218, 45, 38, 1);
 }
+
 h5 {
     padding: 20px 0;
     padding: 2rem 0;
@@ -206,6 +241,7 @@ h5 {
     color: rgba(87, 87, 87, 1);
 }
 
+
 /* Barra superior */
 
 .header-top {
@@ -214,6 +250,7 @@ h5 {
     overflow: hidden;
     background-color: white;
 }
+
 .header-top p {
     padding-left: 20px;
     padding-left: 2rem;
@@ -225,12 +262,15 @@ h5 {
     font-weight: bold;
     color: rgba(218, 45, 38, 1);
 }
+
 .header-top p span {
     color: rgba(87, 87, 87, 1);
 }
+
 .header-logos {
     float: right;
 }
+
 .header-logos ul {
     margin: 0;
     padding: 23px 0;
@@ -239,22 +279,27 @@ h5 {
     padding-right: 1.5rem;
     vertical-align: center;
 }
+
 .header-logos ul li {
     display: inline-block;
     margin: 0 3px 0;
     margin: 0 .3rem 0;
 }
+
 .header-logos ul li a {
     display: block;
     transition: opacity .2s;
 }
+
 .header-logos ul li a:hover {
     opacity: .8;
 }
+
 .header-logos ul li a img {
     width: 25px;
     width: 2.5rem;
 }
+
 
 /* menú */
 
@@ -262,6 +307,7 @@ h5 {
     width: 100%;
     background: linear-gradient(54deg, #DA2D26 16%, #F2914B 100%);
 }
+
 
 /* menú fixed */
 
@@ -271,6 +317,7 @@ h5 {
     left: 0;
     width: 20%;
 }
+
 .cont_h1 {
     padding: 60px 10px;
     padding: 6rem 1rem;
@@ -278,21 +325,26 @@ h5 {
     max-width: 200px;
     max-width: 20rem;
 }
+
 .nav-principal h1 {
     width: 90%;
     margin: 0 auto;
 }
+
 .nav-principal ul {
     font-size: 17px;
     font-size: 1.7rem;
     font-weight: bold;
 }
+
 .nav-principal ul li {
     border-bottom: 1px solid rgba(255, 255, 255, .15);
 }
+
 .nav-principal ul li:first-child {
     border-top: 1px solid rgba(255, 255, 255, .15);
 }
+
 .nav-principal ul li a {
     display: block;
     text-decoration: none;
@@ -302,6 +354,7 @@ h5 {
     position: relative;
     transition: .4s;
 }
+
 .nav-principal ul li a:hover,
 .nav-principal_active {
     padding: 17px 17px 17px 60px;
@@ -309,11 +362,13 @@ h5 {
     background-color: rgba(255, 255, 255, .15);
 }
 
+
 /* Contenido */
 
 .container {
     padding: 0 8%;
 }
+
 .container p {
     padding: 0 0 20px;
     padding: 0 0 2rem;
@@ -323,12 +378,15 @@ h5 {
     line-height: 1.4;
     color: rgba(146, 146, 146, 1);
 }
+
 .img_container {
     position: relative;
 }
+
 .img_container img {
     max-width: 100%;
 }
+
 .down_ico {
     position: absolute;
     top: 17px;
@@ -336,22 +394,26 @@ h5 {
     right: 17px;
     right: 1.7rem;
 }
+
 .down_ico img {
     width: 25px;
     width: 2.5rem;
     opacity: 0;
     transition: all cubic-bezier(.68, -.55, .265, 1.55) .5s;
 }
+
 .img_container:hover .down_ico img,
 .type_container:hover .down_ico img {
     width: 35px;
     width: 3.5rem;
     opacity: .4;
 }
+
 .img_container + p {
     padding-top: 20px;
     padding-top: 2rem;
 }
+
 p.description {
     padding: 10px 0 20px;
     padding: 1rem 0 2rem;
@@ -361,62 +423,78 @@ p.description {
     color: rgba(87, 87, 87, 1);
     line-height: 1;
 }
+
 h2 + p {
     padding-top: 10px;
     padding-top: 1rem !important;
 }
+
 .container p a {
     text-decoration: none;
     color: rgba(242, 145, 75, 1);
     transition: all .2s;
 }
+
 .container p a:hover {
     opacity: .7;
 }
+
 
 /* Colores */
 
 .primario-rojo {
     background: rgba(218, 45, 38, 1);
 }
+
 .primario-naranja {
     background: rgba(242, 145, 75, 1);
 }
+
 .primario-gris {
     background: rgba(87, 87, 87, 1);
 }
+
 .primario-gradient {
     background: linear-gradient(54deg, #DA2D26 16%, #F2914B 100%);
 }
+
 .secundario-azul {
     background: rgba(38, 178, 218, 1);
 }
+
 .secundario-verde {
     background: rgba(151, 211, 93, 1);
 }
+
 .secundario-rojo {
     background: rgba(248, 86, 78, 1);
 }
+
 .secundario-gris1 {
     background: rgba(146, 146, 146, 1);
 }
+
 .secundario-gris2 {
     background: rgba(222, 222, 222, 1);
 }
+
 .secundario-gris3 {
     background: rgba(252, 252, 252, 1);
 }
+
 .color_container {
     margin-bottom: 50px;
     margin-bottom: 5rem;
     width: 100%;
     background: white;
 }
+
 .color-muestra {
     height: 120px;
     height: 12rem;
     position: relative;
 }
+
 .color-muestra span {
     position: absolute;
     top: 20px;
@@ -429,22 +507,27 @@ h2 + p {
     opacity: 0;
     transition: all .4s;
 }
+
 .color-muestra:hover span {
     opacity: 1;
 }
+
 .secundario-gris3 span {
     color: rgba(146, 146, 146, 1);
 }
+
 .color_container .dib50,
 .gradient_container .dib50,
 .gradient_container .dib100 {
     padding: 15px 5px 15px 15px;
     padding: 1.5rem .5rem 1.5rem 1.5rem;
 }
+
 .gradient_container .dib50:nth-child(4),
 .gradient_container .dib50:nth-child(5) {
     padding-top: 0;
 }
+
 .color_container .dib50 strong,
 .color_container .dib50 span,
 .gradient_container .dib50 strong,
@@ -455,6 +538,7 @@ h2 + p {
     font-size: 12px;
     font-size: 1.2rem;
 }
+
 .color_container .dib50 strong,
 .gradient_container .dib50 strong,
 .gradient_container .dib100 strong {
@@ -462,6 +546,7 @@ h2 + p {
     color: rgba(87, 87, 87, 1);
     line-height: 2;
 }
+
 .color_container .dib50 span,
 .gradient_container .dib50 span,
 .gradient_container .dib100 span {
@@ -469,19 +554,23 @@ h2 + p {
     color: rgba(87, 87, 87, .4);
     line-height: 1;
 }
+
 .gradient_container {
     margin-bottom: 50px;
     margin-bottom: 5rem;
     width: 100%;
     background: white;
 }
+
 .gradient-muestra {
     height: 70px;
     height: 7rem;
 }
+
 .gradient_container .dib100 {
     border-top: 1px solid rgba(87, 87, 87, .2);
 }
+
 
 /* jerarquía del color */
 
@@ -494,20 +583,25 @@ h2 + p {
     height: 35px;
     height: 3.5rem;
 }
+
 .ancho35 {
     width: 35%;
 }
+
 .ancho30 {
     width: 30%;
 }
+
 .ancho5 {
     width: 5%;
 }
+
 .ancho35 p,
 .ancho30 p,
 .ancho5 p {
     text-align: right;
 }
+
 
 /* Tipografía corporativa */
 
@@ -515,10 +609,12 @@ h2 + p {
     background: white;
     position: relative;
 }
+
 .type_container p {
     padding: 23px;
     padding: 2.3rem;
 }
+
 .type-muestra--regular p,
 .type-muestra--bold p {
     font-size: 15px;
@@ -527,17 +623,20 @@ h2 + p {
     color: rgba(87, 87, 87, 1);
     text-align: center;
 }
+
 .type-muestra--regular p:first-line,
 .type-muestra--bold p:first-line {
     font-size: 70px;
     font-size: 7rem;
     line-height: 1;
 }
+
 .type-abcd--regular,
 .type-abcd--bold {
     word-break: break-all;
     border-left: 1px solid rgba(87, 87, 87, .2);
 }
+
 .type-abcd--regular p,
 .type-abcd--bold p {
     font-size: 26px;
@@ -547,18 +646,22 @@ h2 + p {
     letter-spacing: .12rem;
     color: rgba(87, 87, 87, 1);
 }
+
 .type-muestra--regular p,
 .type-abcd--regular p {
     font-weight: regular;
 }
+
 .type-muestra--bold p,
 .type-abcd--bold p {
     font-weight: bold;
 }
+
 .type_container.mar5_top {
     margin-bottom: 50px;
     margin-bottom: 5rem;
 }
+
 
 /* Headings */
 
@@ -567,12 +670,15 @@ h2 + p {
     margin-bottom: 50px;
     margin-bottom: 5rem;
 }
+
 .h-content {
     border-bottom: 1px solid rgba(87, 87, 87, .2);
 }
+
 .h-content:last-child {
     border: none;
 }
+
 .h-content h2,
 .h-content h3,
 .h-content h4,
@@ -581,12 +687,14 @@ h2 + p {
     margin: 3rem 0 .5px 0;
     padding: 0 30px;
 }
+
 .h-content p.description {
     text-align: left;
     padding-left: 30px;
     padding-left: 3rem;
     font-weight: bold;
 }
+
 
 /* Paràgraf */
 
@@ -597,12 +705,14 @@ h2 + p {
     margin-bottom: 50px;
     margin-bottom: 5rem;
 }
+
 .p_container p.description {
     text-align: left;
     padding-bottom: 10px;
     padding-bottom: 1rem;
     font-weight: bold;
 }
+
 
 /* Desplegable */
 
@@ -612,10 +722,12 @@ h2 + p {
     height: 100%;
     display: none;
 }
+
 .mdl-layout__drawer-button {
     position: fixed;
     display: none;
 }
+
 .mdl-layout__drawer.is-visible {
     background: linear-gradient(54deg, #DA2D26 16%, #F2914B 100%);
     border-right: none;
@@ -626,12 +738,15 @@ h2 + p {
     width: 50%;
     z-index: 6;
 }
+
 .mdl-layout__drawer .mdl-navigation {
     padding: 0;
 }
+
 a.mdl-navigation__link {
     color: white;
 }
+
 nav.mdl-navigation a {
     display: block;
     text-decoration: none;
@@ -647,16 +762,19 @@ nav.mdl-navigation a {
     border-bottom: 1px solid rgba(255, 255, 255, .15);
     margin-top: 10px;
 }
+
 nav.mdl-navigation a:hover {
     padding: 1.7rem 1.7rem 1.7rem 6rem;
     background-color: rgba(255, 255, 255, .15);
 }
+
 i.material-icons {
     color: white;
     position: absolute;
     top: 10px;
     left: 10px;
 }
+
 img.circulo {
     position: fixed;
     width: 43px;
@@ -664,17 +782,21 @@ img.circulo {
     top: 7px;
     z-index: 1;
 }
+
 .mdl-layout__obfuscator.is-visible {
     position: fixed;
 }
+
 .des_ico {
     padding-left: 4rem;
 }
+
 .des_ico img {
     width: 40px;
     width: 4rem;
     margin: 5px;
 }
+
 
 /* Fin desplegable */
 
@@ -686,10 +808,8 @@ img.circulo {
         font-size: 62.5%;
     }
 }
+
 @media screen and (max-width: 1130px) {
-    html {
-        font-size: 55%;
-    }
     #colors .dib25 {
         width: 33.333%;
     }
@@ -707,6 +827,7 @@ img.circulo {
         padding-right: .5rem;
     }
 }
+
 @media screen and (max-width: 960px) {
     .type-abcd--regular p,
     .type-abcd--bold p {
@@ -719,11 +840,13 @@ img.circulo {
         padding: 1.7rem 1.7rem 1.7rem 4rem;
     }
 }
+
 @media screen and (max-width: 840px) {
     .container {
         padding: 0 6%;
     }
 }
+
 @media screen and (max-width: 800px) {
     .nav-principal {
         display: none;
@@ -764,6 +887,7 @@ img.circulo {
         display: none;
     }
 }
+
 @media screen and (max-width: 610px) {
     #colors .dib25,
     #colors .dib33 {
@@ -787,11 +911,13 @@ img.circulo {
         text-align: center;
     }
 }
+
 @media screen and (max-width: 415px) {
     .mdl-layout__drawer.is-visible {
         width: 70%;
     }
 }
+
 @media screen and (max-width: 375px) {
     #identitat .dib50.pad5_right,
     #identitat .dib50.pad5_left {
