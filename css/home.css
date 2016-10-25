@@ -801,6 +801,50 @@ img.circulo {
 /* Fin desplegable */
 
 
+/* Error 404 */
+
+.error_container{
+    margin-left: 26%;
+    padding-top: 60px;
+}
+
+.big_title{
+    font-size: 250; font-size: 25rem;
+    font-weight: bold;
+    color: rgba(218, 45, 38, 1);
+    letter-spacing: 190px;
+}
+
+.circulo_error{
+    display: block;
+    position: relative;
+    width: 170px;
+    bottom: 210px;
+    left: 160px;
+}
+
+.error_404{
+    width: 100px;
+    margin-left: 200px;
+    margin-top:20px;
+
+}
+
+.error_404:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.error_container p{
+    font-size: 25px; font-size: 2.5rem;
+    color: rgb(87,87,86);
+    margin-top: -180px;
+    margin-left: 90px;
+}
+
+/* Fin error 404*/
+
+
 /* Responsive */
 
 @media screen and (max-width: 1180px) {
@@ -935,3 +979,25 @@ img.circulo {
         text-align: center;
     }
 }
+
+/*Responsive error 404*/
+
+
+@media screen and (min-width: 800px) and (max-width:1125px ){
+    .error_container{
+        margin-left: 20%;
+    }
+
+    .error_404 {
+    margin-left: 180px;
+    }
+
+}
+
+@media screen (min-width: 900px) and (max-width: 1090px){
+        .big_title{
+            letter-spacing: 180px;
+        }
+}
+
+/* fin responsive error 404*/
