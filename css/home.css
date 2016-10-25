@@ -885,6 +885,13 @@ img.circulo {
     }
 }
 
+@media screen and (max-width: 650px) {
+    .des_ico img {
+        width: 30px;
+        width: 3rem;
+    }
+}
+
 @media screen and (max-width: 610px) {
     #colors .dib25,
     #colors .dib33 {
