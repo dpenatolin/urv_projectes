@@ -1,6 +1,7 @@
 /*slider*/
 
 .carousel-inner {
+
     height: 300px;
 }
 .carousel-indicators {
@@ -9,6 +10,7 @@
 .carousel-indicators .active {
     background-color: #db3127 !important;
     border: none;
+    
 }
 .carousel-control.left {
     background-image: none !important;
