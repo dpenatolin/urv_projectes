@@ -727,7 +727,7 @@ h2 + p {
 .mdl-layout__drawer-button {
     position: fixed;
     display: none;
-    z-index: 100;
+    z-index:
 }
 
 .mdl-layout__drawer.is-visible {
